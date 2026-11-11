@@ -11,7 +11,8 @@ api_key = os.getenv("TRAFIKLAB_API_KEY")
 if not api_key:
     raise RuntimeError("TRAFIKLAB_API_KEY is missing")
 
-url = "https://api.koda.trafiklab.se/KoDa/api/v2/gtfs-rt/sl/TripUpdates"
+# url = "https://api.koda.trafiklab.se/KoDa/api/v2/gtfs-rt/sl/TripUpdates"
+url = "https://api.koda.trafiklab.se/KoDa/api/v2/gtfs-static/sl"
 
 params = {
     "date": "2026-08-26",
